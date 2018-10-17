@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="CryptoCurrency" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CryptoCurrencies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yua-Tn-lDd" userLabel="Title">
+                                <rect key="frame" x="642" y="80" width="636" height="104"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="80"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="Uoq-Wu-3aU" userLabel="CryptoTableView">
+                                <rect key="frame" x="90" y="204" width="1740" height="764"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" id="RPg-wp-mhQ" userLabel="Header">
+                                    <rect key="frame" x="0.0" y="0.0" width="1740" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XBZ-Nd-X5i" userLabel="RealCurrenciesHeaders">
+                                            <rect key="frame" x="460" y="15" width="1200" height="50"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htq-yh-OtI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="224" height="50"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4Z-wL-CYM">
+                                                    <rect key="frame" x="244" y="0.0" width="224" height="50"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JPY" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rh7-Wg-bac">
+                                                    <rect key="frame" x="488" y="0.0" width="224" height="50"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GBP" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tiv-7d-bd3">
+                                                    <rect key="frame" x="732" y="0.0" width="224" height="50"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOK" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hA-Ku-Z9f">
+                                                    <rect key="frame" x="976" y="0.0" width="224" height="50"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="1200" id="Wvs-YD-1nY"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="XBZ-Nd-X5i" firstAttribute="leading" secondItem="RPg-wp-mhQ" secondAttribute="leading" constant="460" id="RXT-aw-Bvh"/>
+                                        <constraint firstItem="XBZ-Nd-X5i" firstAttribute="centerY" secondItem="RPg-wp-mhQ" secondAttribute="centerY" id="bKd-NF-Qov"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cryptoCell" rowHeight="160" id="PtV-It-UwL" customClass="CryptoCell" customModule="CryptoCurrency" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="146" width="1740" height="160"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PtV-It-UwL" id="ZzZ-ct-dXS">
+                                            <rect key="frame" x="0.0" y="0.0" width="1740" height="160"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="90P-pD-DgD" userLabel="CryptoStuff">
+                                                    <rect key="frame" x="20" y="8" width="400" height="144"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BTC" translatesAutoresizingMaskIntoConstraints="NO" id="LrC-tD-Ryd" userLabel="CryptoLogo">
+                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="144"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="100" id="Cmt-VR-CLO"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crypto name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZH-kC-NaE">
+                                                            <rect key="frame" x="120" y="0.0" width="280" height="144"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="400" id="lGz-lH-7MS"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7E5-jy-nFY" userLabel="RealCurrencieValues">
+                                                    <rect key="frame" x="460" y="55" width="1200" height="50"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBn-Fc-nzs">
+                                                            <rect key="frame" x="0.0" y="0.0" width="224" height="50"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqt-jF-LZd">
+                                                            <rect key="frame" x="244" y="0.0" width="224" height="50"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBW-6i-Hmm">
+                                                            <rect key="frame" x="488" y="0.0" width="224" height="50"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqr-ce-HU0">
+                                                            <rect key="frame" x="732" y="0.0" width="224" height="50"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADm-DW-bbb">
+                                                            <rect key="frame" x="976" y="0.0" width="224" height="50"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="1200" id="WiM-Qj-Fjq"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="90P-pD-DgD" firstAttribute="top" secondItem="ZzZ-ct-dXS" secondAttribute="top" constant="8" id="Ab1-8U-qFz"/>
+                                                <constraint firstItem="7E5-jy-nFY" firstAttribute="leading" secondItem="90P-pD-DgD" secondAttribute="trailing" constant="40" id="Ge0-6U-RCG"/>
+                                                <constraint firstItem="7E5-jy-nFY" firstAttribute="centerY" secondItem="ZzZ-ct-dXS" secondAttribute="centerY" id="OPs-Oq-Xq2"/>
+                                                <constraint firstAttribute="bottom" secondItem="90P-pD-DgD" secondAttribute="bottom" constant="8" id="W8S-QJ-twt"/>
+                                                <constraint firstItem="90P-pD-DgD" firstAttribute="leading" secondItem="ZzZ-ct-dXS" secondAttribute="leading" constant="20" id="m0p-yQ-B4p"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cryptoFullname" destination="WZH-kC-NaE" id="xV3-e8-rGd"/>
+                                            <outlet property="cryptoImg" destination="LrC-tD-Ryd" id="m8Y-so-Y9N"/>
+                                            <outlet property="valueEUR" destination="PBn-Fc-nzs" id="LO5-j1-8dY"/>
+                                            <outlet property="valueGBP" destination="wqr-ce-HU0" id="lq4-I4-Z2h"/>
+                                            <outlet property="valueJPY" destination="CBW-6i-Hmm" id="EFX-L2-23H"/>
+                                            <outlet property="valueNOK" destination="ADm-DW-bbb" id="knk-xd-nOo"/>
+                                            <outlet property="valueUSD" destination="Dqt-jF-LZd" id="ckl-ZR-KBw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data provided by  CryptoCompare.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olZ-48-Bxs">
+                                <rect key="frame" x="742" y="988" width="437" height="32"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="eS5-Qh-hvk">
+                                <rect key="frame" x="110" y="98" width="377" height="86"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwn-eu-X3p">
+                                        <rect key="frame" x="0.0" y="0.0" width="213" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Refresh"/>
+                                        <connections>
+                                            <action selector="refreshButtonTapped:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="ZQx-oy-g86"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VAy-rB-Hv6">
+                                        <rect key="frame" x="245" y="0.0" width="132" height="86"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last update" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlC-Lt-ja7">
+                                                <rect key="frame" x="0.0" y="0.0" width="132" height="39"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.12.2018 12:34" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2C-ft-wyu">
+                                                <rect key="frame" x="0.0" y="47" width="132" height="39"/>
+                                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Yua-Tn-lDd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Bbn-PA-5Of"/>
+                            <constraint firstItem="Uoq-Wu-3aU" firstAttribute="top" secondItem="Yua-Tn-lDd" secondAttribute="bottom" constant="20" id="Crn-BY-xDZ"/>
+                            <constraint firstItem="Yua-Tn-lDd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LgK-V1-uzL"/>
+                            <constraint firstItem="Uoq-Wu-3aU" firstAttribute="top" secondItem="eS5-Qh-hvk" secondAttribute="bottom" constant="20" id="Ppe-6b-tOL"/>
+                            <constraint firstItem="Uoq-Wu-3aU" firstAttribute="trailing" secondItem="bRW-DC-Tqf" secondAttribute="trailing" id="XEH-AY-2Kt"/>
+                            <constraint firstItem="Uoq-Wu-3aU" firstAttribute="leading" secondItem="bRW-DC-Tqf" secondAttribute="leading" id="ciY-5q-05h"/>
+                            <constraint firstItem="olZ-48-Bxs" firstAttribute="top" secondItem="Uoq-Wu-3aU" secondAttribute="bottom" constant="20" id="eqA-io-pJd"/>
+                            <constraint firstItem="olZ-48-Bxs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k4L-ci-fAx"/>
+                            <constraint firstItem="eS5-Qh-hvk" firstAttribute="leading" secondItem="bRW-DC-Tqf" secondAttribute="leading" constant="20" id="rFh-sd-od8"/>
+                            <constraint firstItem="olZ-48-Bxs" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="vZF-3N-NaK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bRW-DC-Tqf"/>
+                    </view>
+                    <connections>
+                        <outlet property="cryptoTableView" destination="Uoq-Wu-3aU" id="1WM-oC-NKC"/>
+                        <outlet property="lastUpdateTime" destination="Q2C-ft-wyu" id="WJ9-pJ-beL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BTC" width="64" height="65"/>
+    </resources>
+</document>
